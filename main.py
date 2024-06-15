@@ -22,6 +22,9 @@ def select_and_store_file():
 main_window = tk.Tk()
 main_window.title("DiffProj - Main Window")
 
+title_lbl = tk.Label(main_window, text="Difference Delta - Please select two files:")
+title_lbl.pack()
+
 basefile_btn = tk.Button(main_window, text="Select the files (first the base and later the other one)", command=select_and_store_file)
 basefile_btn.pack()
 
