@@ -1,7 +1,4 @@
-import os.path
-from difflib import Differ
-import pandas as pd
-from functions import load_and_compare
+from functions.loadandcompare import load_and_compare
 import tkinter as tk
 from tkinter import filedialog
 
