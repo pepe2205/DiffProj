@@ -4,6 +4,8 @@ from tkinter import filedialog
 
 result_path = ""
 file_path = []
+
+# This function is used to select the files and store their paths
 def select_and_store_file():
     global file_path
     selected_file = filedialog.askopenfilenames()
@@ -19,6 +21,8 @@ def select_and_store_file():
         except Exception as e:
             print(f"Reading file loc error: {e}")
 
+# This function is used to select the path that the delta.csv file will be written
+# Warning: if none path is selected, the delta.csv file will be written at the software folder
 def select_directory():
     global result_path
     directory = filedialog.askdirectory()
